@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src=
+        "https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.directpayment.js">
+    </script>
+
+    <script type="text/javascript">
+        PagSeguroDirectPayment.setSessionId('{{ session_id }}');
+    </script>
+
+    <script type="text/javascript">
+        PagSeguroDirectPayment.onSenderHashReady(function(response){
+            if(response.status == 'error') {
+                console.log("ocorreu um erro")
+                console.log(response.message);
+                return false;
+            }
+            var hash = response.senderHash; //Hash estará disponível nesta variável.
+            console.log("hash");
+            console.log(hash);
+            console.log("hash");
+        });
+    </script>
+
+    <script type="text/javascript">
+        PagSeguroDirectPayment.createCardToken({
+            cardNumber: '4111111111111111',
+            brand: 'visa',
+            cvv: '123',
+            expirationMonth: '12',
+            expirationYear: '2030',
+            success: function(response) {
+            // Retorna o cartão tokenizado.
+                console.log("response");
+                console.log(response);
+                console.log("response");
+            },
+            error: function(response) {
+                     // Callback para chamadas que falharam.
+
+            },
+            complete: function(response) {
+                 // Callback para todas chamadas.
+            }
+        });
+    </script>
+</head>
+<body>
+    <a href="{% url 'pagar' %}?hash={{ hash }}">Pagar</a>
+</body>
+</html>

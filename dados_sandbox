@@ -1,0 +1,115 @@
+# Vendedor de testes
+
+Seu e-mail é:
+    jonatanjrss@gmail.com
+Seu token é:
+    BA0F16EEE59C4196B6EEE2F585EA6A03
+
+
+# Aplicação
+
+appID:
+    app4054910745
+AppKey:
+    598AFCB44B4B6228843DEF9EE1715241
+
+
+Vendedor de Testes
+
+Para simular um vendedor de testes no ambiente da Aplicação, utilize as credenciais abaixo:
+
+VENDEDOR 1
+E-mail:
+    v11855404703122016872@sandbox.pagseguro.com.br
+
+Senha:
+    5N3427e57gN92004
+
+Chave Pública:
+    PUB2D459C0CEE904F9C8FD41555ED0C3E60
+
+VENDEDOR 2
+
+E-mail:
+    v43766723616136915999@sandbox.pagseguro.com.br
+
+copiar
+
+Senha:
+    295a28116546b530
+
+
+
+"""
+OrderedDict([('authorization', OrderedDict([('code', '5144B3099C62450592C2BFD90A1586F8'),
+('authorizerEmail', 'v11855404703122016872@sandbox.pagseguro.com.br'), ('creationDate', '2020-06-06T11:24:10.000-03:00')
+, ('reference', 'REF123456789'), ('account', OrderedDict([('publicKey', 'PUB2D459C0CEE904F9C8FD41555ED0C3E60')])),
+('permissions', OrderedDict([('permission', [OrderedDict([('code', 'CREATE_CHECKOUTS'), ('status', 'APPROVED'),
+ ('lastUpdate', '2020-06-06T21:57:27.000-03:00')]), OrderedDict([('code', 'RECEIVE_TRANSACTION_NOTIFICATIONS'),
+ ('status', 'APPROVED'), ('lastUpdate', '2020-06-06T21:57:27.000-03:00')]), OrderedDict([('code', 'SEARCH_TRANSACTIONS'),
+  ('status', 'APPROVED'), ('lastUpdate', '2020-06-06T21:57:27.000-03:00')]), OrderedDict([('code', 'DIRECT_PAYMENT'),
+   ('status', 'APPROVED'), ('lastUpdate', '2020-06-06T21:57:27.000-03:00')]), OrderedDict([('code', 'MANAGE_PAYMENT_PRE_APPROVALS'),
+    ('status', 'APPROVED'), ('lastUpdate', '2020-06-06T21:57:27.000-03:00')])])]))]))])
+
+"""
+
+
+COMPRADOR
+
+
+
+Email:
+    c46879763398023446825@sandbox.pagseguro.com.br
+
+copiar
+
+Senha:
+    071064H267495907
+
+copiar
+Cartão de crédito de testes
+
+Você pode utilizar o cartão abaixo para fazer seus testes no checkout do Sandbox.
+
+Número:
+    4111111111111111
+
+copiar
+
+Bandeira:
+    visa
+
+Válido até:
+    12/2030
+
+CVV:
+    123
+
+
+
+"""
+{'transaction': OrderedDict([('date', '2020-06-07T11:21:25.000-03:00'),
+ ('code', '2D2DC075-6F7B-4C19-8B0A-27023DD224CE'), ('type', '1'), ('status', '1'),
+ ('lastEventDate', '2020-06-07T11:21:25.000-03:00'), ('paymentMethod', OrderedDict([('type', '1'),
+ ('code', '101')])), ('grossAmount', '24300.00'), ('discountAmount', '0.00'), ('feeAmount', '2926.12'),
+  ('netAmount', '21373.88'), ('extraAmount', '0.00'), ('installmentCount', '5'), ('itemCount', '1'),
+  ('items', OrderedDict([('item', OrderedDict([('id', '0001'), ('description', 'Notebook Prata'),
+  ('quantity', '1'), ('amount', '24300.00')]))])), ('sender', OrderedDict([('name', 'Jose Comprador'),
+  ('email', 'c46879763398023446825@sandbox.pagseguro.com.br'), ('phone', OrderedDict([('areaCode', '11'),
+   ('number', '56273440')])), ('documents', OrderedDict([('document', OrderedDict([('type', 'CPF'),
+   ('value', '22111944785')]))]))])),
+   ('shipping', OrderedDict([('address', OrderedDict([('street', 'Av. Brigadeiro Faria Lima'),
+   ('number', '1384'), ('complement', '5o andar'), ('district', 'Jardim Paulistano'),
+    ('city', 'Sao Paulo'), ('state', 'SP'), ('country', 'BRA'), ('postalCode', '01452002')])),
+    ('type', '3'), ('cost', '0.00')])), ('gatewaySystem', OrderedDict([('type', 'cielo'),
+    ('rawCode', OrderedDict([('@xsi:nil', 'true'), ('@xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')])),
+    ('rawMessage', OrderedDict([('@xsi:nil', 'true'), ('@xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')])),
+     ('normalizedCode', OrderedDict([('@xsi:nil', 'true'), ('@xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')])),
+      ('normalizedMessage', OrderedDict([('@xsi:nil', 'true'), ('@xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')])),
+      ('authorizationCode', '0'), ('nsu', '0'), ('tid', '0'), ('establishmentCode', '1056784170'),
+       ('acquirerName', 'CIELO')]))])
+       , 'status_code': 200, 'success': True, 'date': datetime.datetime(2020, 6, 7, 11, 21, 25, tzinfo=tzoffset(None, -10800)),
+        'code': '2D2DC075-6F7B-4C19-8B0A-27023DD224CE'}
+
+
+"""
